@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="w-10/12 mx-auto my-[69px]">
+    <header class="bg-[#e7f4fb] rounded-lg p-12 flex justify-between items-center">
+        <div>
+            <h1 class="text-[45px] font-[700]">Ineractive</h1>
+            <p class="text-2xl font-semibold text-[gray]">Geometry Genius</p>
+        </div>
+        <button class="text-2xl pr-[50px] bg-[#1090D8] py-2 px-12 text-white rounded-[8px] font-semibold">Blog</button>
+    </header>
+    <main>
+        <section class="grid sm:grid-cols-4 gap-8 mt-12">
+
+            <!-- Card Number 1 -->
+
+            <div id="bg-color-1" class="border rounded-xl p-8 bg-gray-100">
+                <div class="flex justify-center">
+                    <img src="./images/triangle.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h1 id="header-name-1" class="text-3xl font-semibold text-center mt-12">Triangle</h1>
+                    <p class="text-2xl text-center mt-3 mb-6 w-auto">Area(A) = 0.5 * b * h</p>
+                    <div class="flex gap-8 items-center justify-center mb-12">
+                        <div class="flex items-center gap-3">
+                            <input id="input-11" class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="b">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input id="second-input" class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="c">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <button id="calculate-btn-1"
+                        class="bg-[#1090D8] p-4 rounded-lg text-white text-2xl font-semibold hover:bg-blue-700 duration-100">Calculate</button>
+                </div>
+            </div>
+
+            <!-- Card Number 2  -->
+
+            <div class="border rounded-xl p-8 bg-gray-100">
+                <div class="flex justify-center">
+                    <img src="./images/rectangle.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-3xl font-semibold text-center mt-12">Rectangle</h1>
+                    <p class="text-2xl text-center mt-3 mb-6 w-auto">Area(A) = 0.5 * b * h</p>
+                    <div class="flex gap-8 items-center justify-center mb-12">
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="b">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="c">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <button class="bg-[#1090D8] p-4 rounded-lg text-white text-2xl font-semibold hover:bg-blue-700 duration-100">Calculate</button>
+                </div>
+            </div>
+
+            <!-- Card Number 3 -->
+
+            <div class="border rounded-xl p-8 bg-gray-100">
+                <div class="flex justify-center">
+                    <img src="./images/parallelogram.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-3xl font-semibold text-center mt-12">Parallelogram</h1>
+                    <p class="text-2xl text-center mt-3 mb-6 w-auto">Area(A) = 0.5 * b * h</p>
+                    <div class="flex gap-8 items-center justify-center mb-12">
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="b">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="c">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <button class="bg-[#1090D8] p-4 rounded-lg text-white text-2xl font-semibold hover:bg-blue-700 duration-100">Calculate</button>
+                </div>
+            </div>
+
+            <!-- Calculate Area -->
+
+            <div id="calculate" class="border rounded-xl p-8 bg-gray-100">
+                <div>
+                    <h1 class="text-2xl font-bold underline text-center mb-8">Area Calculation</h1>
+                    <div class="text-xl flex justify-between items-center">
+                        <p id="header-name"></p>
+                        <p> <span id="calculate-value">12</span>cm <sup>2</sup></p>
+                        <button class="bg-[#1090d8] py-2 px-3 rounded-md text-white font-semibold">Covert to m <sup>2</sup></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Number 4 -->
+
+            <div class="border rounded-xl p-8 bg-gray-100">
+                <div class="flex justify-center">
+                    <img src="./images/rhombus.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-3xl font-semibold text-center mt-12">Rhombus</h1>
+                    <p class="text-2xl text-center mt-3 mb-6 w-auto">Area(A) = 0.5 * b * h</p>
+                    <div class="flex gap-8 items-center justify-center mb-12">
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="b">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="c">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <button class="bg-[#1090D8] p-4 rounded-lg text-white text-2xl font-semibold hover:bg-blue-700 duration-100">Calculate</button>
+                </div>
+            </div>
+
+            <!-- Card Number 5  -->
+
+            <div class="border rounded-xl p-8 bg-gray-100">
+                <div class="flex justify-center">
+                    <img src="./images/pentagon.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-3xl font-semibold text-center mt-12">Pentagon</h1>
+                    <p class="text-2xl text-center mt-3 mb-6 w-auto">Area(A) = 0.5 * b * h</p>
+                    <div class="flex gap-8 items-center justify-center mb-12">
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="b">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="c">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <button class="bg-[#1090D8] p-4 rounded-lg text-white text-2xl font-semibold hover:bg-blue-700 duration-100">Calculate</button>
+                </div>
+            </div>
+
+            <!-- Card Number 6  -->
+
+            <div class="border rounded-xl p-8 bg-gray-100">
+                <div class="flex justify-center">
+                    <img src="./images/ellipse.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-3xl font-semibold text-center mt-12">Ellipse</h1>
+                    <p class="text-2xl text-center mt-3 mb-6 w-auto">Area(A) = 0.5 * b * h</p>
+                    <div class="flex gap-8 items-center justify-center mb-12">
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="b">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input class="bg-[#F1F1F1] outline-none rounded-lg py-2 px-4 w-[95px]" type="text" placeholder="c">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <button class="bg-[#1090D8] p-4 rounded-lg text-white text-2xl font-semibold hover:bg-blue-700 duration-100">Calculate</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/calculate.js"></script>
+</body>
+
+</html>
